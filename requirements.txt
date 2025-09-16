@@ -1,0 +1,8 @@
+# Python dependencies for model export script
+torch>=1.11.0
+torchvision>=0.12.0
+openvino-dev>=2023.0.0
+anomalib>=0.6.0
+numpy>=1.21.0
+opencv-python>=4.5.0
+pyyaml>=6.0

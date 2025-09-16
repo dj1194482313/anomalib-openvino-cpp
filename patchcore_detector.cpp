@@ -2,6 +2,7 @@
 #include <iostream>
 #include <filesystem>
 #include <numeric>
+#include <sstream>
 
 PatchCoreDetector::PatchCoreDetector(const string& model_path, 
                                    const string& metadata_path,
