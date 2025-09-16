@@ -3,7 +3,6 @@
 #include <string>
 #include <numeric>
 #include <vector>
-#include <Windows.h>
 #include <opencv2/dnn.hpp>
 #include <opencv2/opencv.hpp>
 #include <openvino/openvino.hpp>

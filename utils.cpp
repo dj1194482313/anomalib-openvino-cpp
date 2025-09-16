@@ -2,8 +2,10 @@
 
 
 MetaData getJson(const string& json_path) {
-    FILE* fp;
-    fopen_s(&fp, json_path.c_str(), "r");
+    FILE* fp = fopen(json_path.c_str(), "r");
+    if (!fp) {
+        throw runtime_error("Failed to open metadata file: " + json_path);
+    }
 
     char readBuffer[1000];
     rapidjson::FileReadStream is(fp, readBuffer, sizeof(readBuffer));
